@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* div {
+    margin-bottom: 200px;
+    margin-top: 200px;
+    width: calc(100%-100px);
+    height: 100px;
+    background-color: greenyellow;
+    transform: translate(100px, 50px);
+} */
+
+ul {
+    list-style: none;
+}
+
+a:hover {
+    color: red;
+}
+
+/* .parent p {
+    color: red;
+} */
+
+.parent>p {
+    color: blueviolet;
+}
+
+.def.xyz {
+    /* and 条件 */
+    color: blue;
+}
+
+.def+p {
+    /* 隣の隣接 */
+    font-size: 50px;
+}
+
+.sample {
+    background-color: #000;
+}
+
+@media screen and (max-width:768px) {
+
+    /* レスポンシブ対応によく使われる　 */
+    .sample {
+        background-color: blueviolet;
+    }
+
+}
+
+/* ①なるべくclassを指定する。
+②セレクターは3つ以上を使わないこと
+③子孫セレクターより子セレクトを使うこと 
+
+sanitize.cssを使うことで、各ブラウザの初期値を統一する
+*/
